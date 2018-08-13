@@ -1,0 +1,32 @@
+{
+  "info": {
+    "_postman_id": "878ab858-9fd4-4548-b512-0fb760ea9635",
+    "name": "Books",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "b834f085-523b-4ce6-aaf4-edbf63eb4f19",
+      "name": "Create Book",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "G-Token",
+            "value": "ROM831ESV"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"title\": {{title}},\n\t\"author\": {{author}},\n\t\"isbn\": {{isbn}},\n\t\"publicationDate\": {{publicationDate}}\n}"
+        },
+        "url": "{{host}}/books"
+      },
+      "response": []
+    }
+  ]
+}
